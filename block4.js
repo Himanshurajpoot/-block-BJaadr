@@ -356,11 +356,12 @@ function nameWithS(){
 };
 5// Write a function called nameWithA which returns a array of names of all the people in got variable whose name includes a or A.
 function nameWithA(){
-  return got.houses.reduce((acc,cv)=>
+ return got.houses.reduce((acc,cv)=>
  acc.concat(cv.people.filter((elm)=>
+
  elm.name.includes("a")||
- elm.name.includes('A'))),[])
- .map((elm)=>elm.name)
+ elm.name.includes('A'))),[]).map(elm=> elm.name)
+ 
 };
 6// Write a function called surnameWithS which returns a array of names of all the people in got variable whoes surname is starting with S(capital s).
 function surnameWithS(){
